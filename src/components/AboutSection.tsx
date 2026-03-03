@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Server, Database } from "lucide-react";
+import profileImg from "@/assets/profile-placeholder.png";
 
 const AboutSection = () => {
   return (
@@ -16,6 +17,23 @@ const AboutSection = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">
             Backend-Focused <span className="text-gradient">Developer</span>
           </h2>
+
+          {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mb-10"
+          >
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_30px_hsl(var(--primary)/0.2)]">
+              <img
+                src={profileImg}
+                alt="Profile photo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
