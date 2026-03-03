@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Server, Database } from "lucide-react";
-import profileImg from "@/assets/profile-placeholder.png";
+import profileImg from "@/assets/profile.png";
 
 const AboutSection = () => {
   return (
@@ -38,17 +38,17 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-                Saya adalah seorang Junior Backend Developer dengan fokus utama pada 
-                <span className="text-foreground font-medium"> Laravel ecosystem</span>. 
+                Saya adalah seorang Junior Backend Developer dengan fokus utama pada
+                <span className="text-foreground font-medium"> Laravel ecosystem</span>.
                 Berpengalaman membangun RESTful APIs, database design, dan server-side architecture.
               </p>
               <p>
-                Memiliki pemahaman solid tentang PHP dan framework Laravel, mulai dari 
-                Eloquent ORM, Middleware, Queue Jobs, hingga Laravel Sanctum untuk authentication. 
+                Memiliki pemahaman solid tentang PHP dan framework Laravel, mulai dari
+                Eloquent ORM, Middleware, Queue Jobs, hingga Laravel Sanctum untuk authentication.
                 Sedikit pengalaman di JavaScript untuk kebutuhan frontend interaktif.
               </p>
               <p>
-                Selalu antusias belajar teknologi baru dan berkontribusi dalam tim untuk 
+                Selalu antusias belajar teknologi baru dan berkontribusi dalam tim untuk
                 membangun solusi digital yang efisien dan maintainable.
               </p>
             </div>
