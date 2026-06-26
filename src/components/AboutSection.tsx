@@ -11,7 +11,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-5xl mx-auto"
         >
           <p className="font-display text-primary text-sm tracking-widest uppercase mb-2">// About Me</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">
@@ -35,21 +35,21 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-4 font-body text-muted-foreground leading-relaxed text-lg">
               <p>
-                Saya adalah seorang Junior Backend Developer dengan fokus utama pada
-                <span className="text-foreground font-medium"> Laravel ecosystem</span>.
-                Berpengalaman membangun RESTful APIs, database design, dan server-side architecture.
+                Saya adalah seorang Software Engineer dengan fokus utama pada
+                <span className="text-foreground font-medium"> ekosistem web development</span>.
+                Berpengalaman membangun arsitektur scalable, RESTful APIs, dan database design yang efisien.
               </p>
               <p>
-                Memiliki pemahaman solid tentang PHP dan framework Laravel, mulai dari
-                Eloquent ORM, Middleware, Queue Jobs, hingga Laravel Sanctum untuk authentication.
-                Sedikit pengalaman di JavaScript untuk kebutuhan frontend interaktif.
+                Memiliki keahlian mendalam tentang PHP dan framework Laravel, dipadukan dengan 
+                kemampuan mendevelop antarmuka yang interaktif menggunakan teknologi Frontend modern.
+                Terbiasa menangani tantangan teknis secara end-to-end.
               </p>
               <p>
-                Selalu antusias belajar teknologi baru dan berkontribusi dalam tim untuk
-                membangun solusi digital yang efisien dan maintainable.
+                Selalu antusias mengikuti perkembangan teknologi terbaru dan berdedikasi untuk 
+                memberikan solusi digital yang berkualitas tinggi dan maintainable.
               </p>
             </div>
 

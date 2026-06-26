@@ -22,9 +22,9 @@ const ContactSection = () => {
 
           <div className="flex justify-center gap-6 mb-12">
             {[
-              { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
-              { icon: Github, label: "GitHub", href: "https://github.com" },
-              { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+              { icon: Mail, label: "Email", href: "mailto:elhanansalik@gmail.com" },
+              { icon: Github, label: "GitHub", href: "https://github.com/salkun" },
+              { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/salik-elhanan-83159234a" },
             ].map((item, i) => (
               <motion.a
                 key={item.label}

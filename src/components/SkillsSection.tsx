@@ -5,14 +5,14 @@ const skills = [
   { name: "PHP", level: 85, category: "backend" },
   { name: "MySQL", level: 80, category: "backend" },
   { name: "REST API", level: 85, category: "backend" },
-  { name: "PostgreSQL", level: 70, category: "backend" },
+  { name: "PostgreSQL", level: 50, category: "backend" },
   { name: "Git", level: 75, category: "tools" },
   { name: "JavaScript", level: 45, category: "frontend" },
   { name: "HTML/CSS", level: 60, category: "frontend" },
   { name: "Blade Template", level: 80, category: "frontend" },
   { name: "Livewire", level: 65, category: "backend" },
   { name: "Docker", level: 50, category: "tools" },
-  { name: "Linux Server", level: 60, category: "tools" },
+  { name: "Linux Server", level: 40, category: "tools" },
 ];
 
 const SkillsSection = () => {
@@ -24,13 +24,14 @@ const SkillsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto"
         >
           <p className="font-display text-primary text-sm tracking-widest uppercase mb-2">// Skills</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-12">
             Tech <span className="text-gradient">Stack</span>
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
             {skills.map((skill, i) => (
               <motion.div
                 key={skill.name}

@@ -3,28 +3,20 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Backend Developer",
-    company: "PT. Digital Nusantara",
-    period: "2024 — Sekarang",
+    role: "Fullstack Developer",
+    company: "SMPS 2 Al-Muhajirin",
+    period: "2023 — Sekarang",
     description:
-      "Mengembangkan dan maintain RESTful API untuk platform SaaS. Implementasi queue jobs, caching strategy dengan Redis, dan optimasi query database untuk performa tinggi.",
-    tech: ["Laravel", "Redis", "MySQL", "Docker"],
+      "Membangun dan memelihara sistem informasi sekolah secara end-to-end, mulai dari perancangan database hingga pengembangan antarmuka pengguna, guna mendukung kelancaran operasional akademik.",
+    tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
   },
   {
-    role: "Junior Fullstack Developer",
-    company: "Startup Kreatif Indonesia",
-    period: "2023 — 2024",
-    description:
-      "Membangun fitur CRUD, dashboard admin, dan integrasi payment gateway. Kolaborasi dengan tim frontend menggunakan Blade template dan Livewire.",
-    tech: ["Laravel", "Livewire", "PostgreSQL", "Midtrans"],
-  },
-  {
-    role: "Web Developer Intern",
-    company: "CV. Teknologi Maju",
+    role: "IT Support",
+    company: "SMP Asy-Syafi'iyah",
     period: "2022 — 2023",
     description:
-      "Belajar dan mengimplementasikan dasar-dasar Laravel, migration, Eloquent ORM, serta membangun modul inventory sederhana.",
-    tech: ["Laravel", "MySQL", "Bootstrap", "Git"],
+      "Mengelola infrastruktur IT sekolah, memberikan dukungan teknis untuk perangkat keras dan jaringan, serta memastikan kelancaran penggunaan teknologi di lingkungan sekolah.",
+    tech: ["Troubleshooting", "Networking", "Hardware Maintenance", "Support"],
   },
 ];
 
@@ -37,6 +29,7 @@ const ExperienceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto"
         >
           <p className="font-display text-primary text-sm tracking-widest uppercase mb-2">
             // Experience
@@ -45,7 +38,7 @@ const ExperienceSection = () => {
             Work <span className="text-gradient">Journey</span>
           </h2>
 
-          <div className="relative max-w-3xl">
+          <div className="relative w-full">
             {/* Timeline line */}
             <div className="absolute left-[7px] md:left-[11px] top-2 bottom-2 w-px bg-border" />
 
