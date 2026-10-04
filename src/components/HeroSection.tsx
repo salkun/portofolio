@@ -47,7 +47,7 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="font-display text-sm text-primary mb-4 tracking-widest uppercase"
         >
-          Hello, World! 👋
+          Hello, World!
         </motion.p>
 
         <motion.h1
