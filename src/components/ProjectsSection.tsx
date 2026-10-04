@@ -4,72 +4,40 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "SURAT",
+    title: "School Backend",
     description:
-      "Sistem manajemen surat digital untuk instansi. Fitur pembuatan, pengarsipan, dan tracking surat masuk/keluar dengan role-based access control.",
-    tech: ["PHP", "MySQL", "Bootstrap", "CRUD"],
-    type: "Fullstack",
-    github: "https://github.com/salkun/SURAT",
+      "API SIAKAD & LMS (EduSphere) dibangun dengan FastAPI. REST API untuk manajemen sekolah: autentikasi, data guru/siswa/kelas, hingga akademik. Didukung SQLAlchemy, Pydantic, serta deployment Docker/cPanel.",
+    tech: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "REST API"],
+    type: "Backend",
+    github: "https://github.com/salkun/school-backend",
   },
   {
-    title: "PENDATAAN",
+    title: "PPDB Frontend",
     description:
-      "Aplikasi web pendataan barang dengan fitur manajemen stok, laporan masuk/keluar, dan dashboard admin. Mendukung multi-user dengan autentikasi.",
-    tech: ["PHP", "MySQL", "Bootstrap", "REST API"],
+      "Portal PPDB Online SMPS 2 Al-Muhajirin Purwakarta. Melayangi siklus pendaftaran calon santri baru: registrasi akun, pemilihan peminatan, pembayaran, unggah berkas, verifikasi panitia, hingga cetak kartu tes.",
+    tech: ["PHP", "Laravel", "Blade", "MySQL", "Tailwind CSS"],
     type: "Fullstack",
-    github: "https://github.com/salkun/PENDATAAN",
+    github: "https://github.com/salkun/ppdb-frontend",
   },
   {
-    title: "Perpus Fullday",
+    title: "EduSphere",
     description:
-      "Sistem manajemen perpustakaan fullstack dengan Vue.js frontend. Fitur pencarian buku, peminjaman, pengembalian, dan denda otomatis.",
-    tech: ["Vue.js", "PHP", "MySQL", "SPA"],
+      "Platform pendidikan SIAKAD & LMS berbasis Laravel dengan panel Admin dan Guru. Fitur manajemen user, data akademik, dan dashboard pengelolaan sekolah.",
+    tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
     type: "Fullstack",
-    github: "https://github.com/salkun/perpus-fullday",
-  },
-  {
-    title: "Web PMB",
-    description:
-      "Website Penerimaan Mahasiswa Baru (PMB) dengan Laravel & Blade. Fitur pendaftaran online, upload dokumen, dan tracking status pendaftaran.",
-    tech: ["Laravel", "Blade", "MySQL", "Auth"],
-    type: "Fullstack",
-    github: "https://github.com/salkun/web-pmb",
-  },
-  {
-    title: "Konseling App",
-    description:
-      "Aplikasi konseling berbasis web dengan JavaScript. Fitur penjadwalan konseling, catatan sesi, dan manajemen data siswa/konselor.",
-    tech: ["JavaScript", "Node.js", "CSS", "REST API"],
-    type: "Fullstack",
-    github: "https://github.com/salkun/Konseling-App",
+    github: "https://github.com/salkun/edusphere",
   },
   {
     title: "Face Mask Detection",
     description:
-      "Sistem deteksi masker wajah menggunakan machine learning dengan Jupyter Notebook. Klasifikasi gambar real-time untuk monitoring protokol kesehatan.",
+      "Sistem deteksi masker wajah menggunakan machine learning dengan Jupyter Notebook. Klasifikasi gambar untuk monitoring protokol kesehatan.",
     tech: ["Python", "Jupyter", "ML", "Computer Vision"],
     type: "Machine Learning",
     github: "https://github.com/salkun/face-mask-detection",
   },
-  {
-    title: "IRIS Kotlin",
-    description:
-      "Implementasi klasifikasi dataset IRIS menggunakan Kotlin. Penerapan algoritma machine learning untuk klasifikasi spesies bunga iris.",
-    tech: ["Kotlin", "ML", "Data Science", "Android"],
-    type: "Mobile",
-    github: "https://github.com/salkun/IRIS_KOTLIN_221351136",
-  },
-  {
-    title: "Undangan Khitanan",
-    description:
-      "Website undangan digital dengan desain modern dan animasi interaktif. Fitur RSVP, countdown timer, galeri foto, dan musik background.",
-    tech: ["HTML", "CSS", "JavaScript", "Animation"],
-    type: "Frontend",
-    github: "https://github.com/salkun/undangan-khitanan-nazwan",
-  },
 ];
 
-const categories = ["All", "Fullstack", "Machine Learning", "Frontend", "Mobile"];
+const categories = ["All", "Backend", "Fullstack", "Machine Learning"];
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -208,7 +176,7 @@ const ProjectsSection = () => {
             >
               <Github size={16} />
               <span>
-                View all 38 repositories on GitHub
+                View all repositories on GitHub
               </span>
               <ExternalLink
                 size={14}
